@@ -1,17 +1,18 @@
 import '../scss/App.scss'
+import Cards from './Cards'
 import Filters from './Filters'
 import Header from './Header'
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Header></Header>
       <Filters></Filters>
-      <section>
-        <div>
-          <cards></cards>
-        </div>
-      </section>
+      <main>
+        <section>
+          <Cards></Cards>
+        </section>
+      </main>
     </div>
   )
 }
