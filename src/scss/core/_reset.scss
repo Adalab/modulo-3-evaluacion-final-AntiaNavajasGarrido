@@ -3,20 +3,37 @@
   text-align: center;
   margin: 20px;
   background-color: lightgray;
+  height: 100vh;
+  font-weight: bolder;
 }
 
-.filterName{
+.filterName, .filterHouse{
   padding: 10px;
-  margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #B8860B;
+  border: 3px solid #B8860B;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.filterHouse{
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid #B8860B;
+
+.form1, .form2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  margin-right: 20px;
+  color: #00008B;
+
+}
+
+.imgLogo {
+  height: 500px;
+  width: 500px;
 }
 
 .chraracters{
@@ -30,5 +47,16 @@
     border: 1px solid #B8860B;
     border-radius: 5px;
     overflow: hidden;
+  }
+  &__info {
+    background-color: #B8860B;
+  }
+  &__name{
+    padding: 10px;
+    color: #00008B;
+  }
+  &__race{
+    padding: 10px;
+    color: #00008B;
   }
 }
