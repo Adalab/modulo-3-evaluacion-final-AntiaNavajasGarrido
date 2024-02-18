@@ -13,7 +13,6 @@ export function fetchCharacters() {
                     image: eachCharacter.image,
                     gender: eachCharacter.gender,
                     alive: eachCharacter.alive,
-                    alternate_names: eachCharacter.alternate_names
                 };
             })
         })
