@@ -5,14 +5,14 @@ import FilterByName from "./FilterByName";
 
 
 
-function Filters( {filterName, handleChangeFilterName}) {
+function Filters( {filterName, handleChangeFilterName, filterHouse, handleChangeFilterHouse}) {
 
     return (
         <>
             
-            <form action="./">
+            <form className="filters" action="./">
                 <FilterByName filterName={filterName} handleChangeFilterName={handleChangeFilterName}></FilterByName>
-                <FilterByHouse></FilterByHouse>
+                <FilterByHouse filterHouse= {filterHouse} handleChangeFilterHouse={handleChangeFilterHouse}></FilterByHouse>
             </form>
         </>
 

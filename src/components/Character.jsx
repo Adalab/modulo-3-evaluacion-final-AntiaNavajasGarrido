@@ -6,7 +6,7 @@ import '../scss/App.scss';
 function Character({character}) {
 
     return (
-        <Link to={"/character/"+character.id}>
+        <Link className="characterCard" to={"/character/"+character.id}>
             <div className="character__img">
                 <img src={character.image} alt="Foto del personaje"/>
             </div>

@@ -16,6 +16,8 @@ function App() {
 
   const [ filterName, setFilterName ] = useState ('');
 
+  const [ filterHouse, setFilterHouse ] = useState ('');
+
   useEffect(() => {
 
     fetchCharacters()
@@ -30,12 +32,16 @@ function App() {
     setFilterName(name)
   };
 
+  const handleChangeFilterHouse = (house) => {
+    setFilterHouse(house)
+  };
+
 
   const findCharacter = (id) => {
     characters.find(character => character.id === id)
   };
 
-  const filteredCharacters = characters.filter(character => filterName === '' || character.name === filterName);
+  const filteredCharacters = characters.filter(character => filterName === '' || character.name.toLowerCase() === filterName.toLowerCase());
 
 
   return (
@@ -46,7 +52,7 @@ function App() {
 
         <Route path='/' element={
           <>
-              <Filters filterName={filterName} handleChangeFilterName={handleChangeFilterName}/>
+              <Filters filterHouse= {filterHouse} handleChangeFilterHouse={handleChangeFilterHouse} filterName={filterName} handleChangeFilterName={handleChangeFilterName}/>
               <Cards characters={filteredCharacters} />
           </>
         } />

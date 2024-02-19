@@ -3,29 +3,10 @@
   text-align: center;
   margin: 20px;
   background-color: lightgray;
-  height: 100vh;
   font-weight: bolder;
 }
 
-.filterName, .filterHouse{
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 3px solid #B8860B;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.form1, .form2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-p{
+.label__name{
   margin-right: 20px;
   color: #00008B;
 
@@ -36,21 +17,7 @@ p{
   width: 500px;
 }
 
-.chraracters{
-  &__list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  &__card{
-    margin: 10px;
-    border: 1px solid #B8860B;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  &__info {
-    background-color: #B8860B;
-  }
+.chraracter{
   &__name{
     padding: 10px;
     color: #00008B;
@@ -60,3 +27,50 @@ p{
     color: #00008B;
   }
 }
+
+.characterCard{
+  margin: 10px;
+  border: 1px solid #B8860B;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+}
+.character__card{
+  list-style-type: none;
+}
+
+.filters, .filterHouse{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character__info{
+  background-color: #B8860B;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.character__img{
+  width: 250px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character__list{
+  display: flex;
+  justify-content: center;
+  }
