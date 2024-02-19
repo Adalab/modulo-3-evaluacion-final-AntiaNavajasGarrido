@@ -1,10 +1,10 @@
 function FilterByHouse() {
 
-    return (
-        <form className="form2">
-            <input className="filterHouse" type="text" placeholder="Indica la casa del personaje" value='' />
-        </form>
-    );
+    return 
+        // <label htmlFor=""> Busca por casa:
+        // <select name="" id="" onChange={} value></select>
+        // </label>
+    ;
 }
 
 export default FilterByHouse;

@@ -14,7 +14,7 @@ function App() {
 
   const [characters, setCharacters] = useState([]);
 
-  const [ filterName, setFilterName ] = useState ('all');
+  const [ filterName, setFilterName ] = useState ('');
 
   useEffect(() => {
 
@@ -35,7 +35,7 @@ function App() {
     characters.find(character => character.id === id)
   };
 
-  const filteredCharacters = characters.filter(character => filterName === 'all' || character.name === filterName);
+  const filteredCharacters = characters.filter(character => filterName === '' || character.name === filterName);
 
 
   return (

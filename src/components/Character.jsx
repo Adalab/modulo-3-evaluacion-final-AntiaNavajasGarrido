@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../scss/App.scss';
 
 
-function Character(character) {
+function Character({character}) {
 
     return (
         <Link to={"/character/"+character.id}>

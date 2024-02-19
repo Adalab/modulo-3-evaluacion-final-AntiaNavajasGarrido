@@ -2,14 +2,16 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import Character from './Character';
 
-function Cards(characters) {
-    const renderCharacters = characters.map((character) => {
-        return <li key={character.id} className='character__card'>
-            <Link to={`/character/${character.id}`}>
-                <Character character={character}/>
-            </Link>
-        </li>
-    })
+function Cards({characters}) {
+    const renderCharacters = characters.map((eachCharacter) => {
+
+       return ( <Link key={eachCharacter.id} to={`/character/${eachCharacter.id}`}>
+            <li className='character__card'>
+                <Character character={eachCharacter} />
+            </li>
+        </Link>
+
+    )});
 
     return (
         <div>
@@ -20,7 +22,7 @@ function Cards(characters) {
     );
 }
 
-Cards.protoTypes = {
+Cards.propTypes = {
     characters: PropTypes.array
 }
 

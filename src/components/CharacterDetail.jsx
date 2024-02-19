@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types';
 import { Link, useParams } from 'react-router-dom';
 
-function CharacterDetail(findCharacter) {
+function CharacterDetail({findCharacter}) {
 
     const params = useParams ();
     
